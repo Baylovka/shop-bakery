@@ -1,0 +1,72 @@
+:root {
+    --color-primary-dark: #31261A;
+    --color-primary-light: #FAF4EA;
+    --color-primary-green: #819B57;
+    --color-secondary-green:#465929;
+    --color-secondary-dark: #A18268;
+    --color-secondary-light: #CFCFBC;
+}
+/* Base */
+body {
+    color: var(--color-primary-dark);
+}
+ul {
+   list-style-type: none;
+}
+
+/* Button */
+.button {
+    color: var(--color-primary-light);
+    border-radius: 8px;
+    border: 2px solid var(--color-primary-green);
+    background-color: var(--color-primary-green);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: #465929;
+}
+
+/* Link */
+.link {
+    color: var(--color-primary-light);
+}
+
+.link:hover {
+    color: var(--color-primary-green);
+}
+
+/* Main section */
+.main-title {
+    color: var(--color-primary-light);
+}
+
+.main-title .accent {
+    color: var(--color-primary-green);
+}
+
+/* Advantages section */
+.advantages-list {
+    color: var(--color-primary-light);
+    background-color: var(--color-primary-green);
+}
+
+.section-title .accent {
+    color: var(--color-primary-green);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-color: rgb(85, 43, 125);
+}
