@@ -235,6 +235,22 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 300;
 }
 
+.format-cards {
+    border: 1px black solid; /* remove */
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.formats-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.formats-item {
+    flex-basis: calc((100% - 40px) / 3);;
+}
+
 /* Contacts section*/
 .contacts-title {
     margin-bottom: 16px;
