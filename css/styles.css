@@ -45,6 +45,7 @@
 }
 
 body {
+    background-color: var(--color-primary-light);
     color: var(--color-primary-dark);
     font-family: "Poppins", sans-serif;
     font-size: 18px;
@@ -66,7 +67,13 @@ address {
     font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin-top: 0;
 }
 
@@ -102,16 +109,23 @@ h1, h2, h3, h4, h5, h6, p {
     max-width: 1288px;
     margin: 0 auto;
     padding: 0 24px;
-} 
+}
+
 /* For all section */
 .section {
     padding: 48px 0;
 }
+
 .section-title {
     font-size: 64px;
     font-weight: 900;
     line-height: 1.3;
 }
+
+.section-title.centered {
+    text-align: center;
+}
+
 .section-title .accent {
     color: var(--color-primary-green);
 }
@@ -121,6 +135,8 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     align-items: center;
     gap: 152px;
+
+    background-color: gray; /* remove */
 }
 
 .header-nav {
@@ -140,7 +156,14 @@ h1, h2, h3, h4, h5, h6, p {
 /* Main section */
 .main-section {
     padding: 272px 0;
+    background: url(../images/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    /* or
+    background: url(/00/images/main-bg.jpg) no-repeat center/top cover; */
 }
+
 .main-title {
     color: var(--color-primary-light);
     font-family: "Poppins", sans-serif;
@@ -158,6 +181,7 @@ h1, h2, h3, h4, h5, h6, p {
 .advantages-section {
     background-color: var(--color-primary-green);
 }
+
 .advantages-list {
     color: var(--color-primary-light);
     font-size: 20px;
@@ -217,6 +241,23 @@ h1, h2, h3, h4, h5, h6, p {
 
 .chefs-title {
     margin-bottom: 80px;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.chefs-title::before,
+.chefs-title::after {
+    display: block;
+    width: 352px;
+    border: 2px solid var(--color-secondary-light);
+    content: "";
+}
+
+.chefs-img {
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: 
+    -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 1px var(--color-secondary-dark);
 }
 
 /* Formats-section */
@@ -229,6 +270,7 @@ h1, h2, h3, h4, h5, h6, p {
 .formats-title {
     margin-bottom: 80px;
 }
+
 .format-text {
     color: var(--color-primary-light);
     font-size: 14px;
@@ -239,6 +281,7 @@ h1, h2, h3, h4, h5, h6, p {
     border: 1px black solid; /* remove */
     border-radius: 16px;
     padding: 24px;
+    background: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark) 100%);
 }
 
 .formats-list {
@@ -248,7 +291,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .formats-item {
-    flex-basis: calc((100% - 40px) / 3);;
+    flex-basis: calc((100% - 40px) / 3);
+    ;
 }
 
 /* Contacts section*/
@@ -257,6 +301,14 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Footer */
+.footer {
+    background: url(../images/footer-bg.png);
+    background-color: var(--color-primary-dark);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .address-link {
     color: var(--color-primary-light);
     font-size: 16px;
@@ -271,17 +323,5 @@ h1, h2, h3, h4, h5, h6, p {
 .address-copyright {
     font-size: 14px;
     color: var(--color-secondary-dark);
-}
-
-
-
-
-
-
-
-
-
-
-body {
-    background-color: rgb(161, 161, 161);
+    margin: 0;
 }
