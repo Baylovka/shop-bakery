@@ -40,7 +40,9 @@
 }
 
 /* Base */
-* {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
@@ -100,7 +102,7 @@ p {
 
 .link:hover {
     color: var(--color-primary-green);
-    font-weight: 600;
+    /* font-weight: 600; */ /* remove */
 }
 
 /* Container */
@@ -136,7 +138,8 @@ p {
     align-items: center;
     gap: 152px;
 
-    background-color: gray; /* remove */
+    background-color: gray;
+    /* remove */
 }
 
 .header-nav {
@@ -240,9 +243,8 @@ p {
 }
 
 .chefs-title {
-    margin-bottom: 80px;
     max-width: 540px;
-    margin: 0 auto;
+    margin: 0 auto 80px;
 }
 
 .chefs-title::before,
@@ -255,9 +257,32 @@ p {
 
 .chefs-img {
     border-radius: 4px 4px 4px 200px;
-    box-shadow: 
-    -16px 16px 0 0 var(--color-primary-light),
-    -16px 16px 0 1px var(--color-secondary-dark);
+    box-shadow:
+        -16px 16px 0 0 var(--color-primary-light),
+        -16px 16px 0 1px var(--color-secondary-dark);
+}
+
+.chefs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 30px;
+}
+
+.chefs-item {
+    flex-basis: calc((100% - 30px) / 2);
+}
+
+.chef-card {
+    display: flex;
+    gap: 30px;
+}
+
+.chef-text p {
+    margin-bottom: 24px;
+}
+
+.chef-text p:last-child {
+    margin-bottom: 0;
 }
 
 /* Formats-section */
@@ -277,11 +302,23 @@ p {
     font-weight: 300;
 }
 
+.format-text p {
+    max-width: 90%;
+    margin: 0;
+}
+
 .format-cards {
-    border: 1px black solid; /* remove */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    border: 1px black solid;
+    /* remove */
     border-radius: 16px;
     padding: 24px;
     background: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark) 100%);
+    height: 445px;
+    /* remove (may be)*/
 }
 
 .formats-list {
@@ -292,6 +329,16 @@ p {
 
 .formats-item {
     flex-basis: calc((100% - 40px) / 3);
+    background: url(../images/walrus-format.jpg);
+    /* remove*/
+    border-radius: 16px;
+    /* remove */
+}
+
+.formats-container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
 /* Carousel*/
@@ -299,6 +346,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     cursor: pointer;
     width: 44px;
     height: 44px;
@@ -318,17 +366,62 @@ p {
 }
 
 /* Contacts section*/
+.contact-section {
+    padding-bottom: 96px;
+}
+
 .contacts-title {
     margin-bottom: 16px;
 }
 
+.contact-container {
+    display: flex;
+    gap: 32px;
+}
+
+.contact-map {
+    flex-shrink: 0;
+    border-radius: 16px;
+}
+
 /* Footer */
+.footer-container {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-logo {
+    flex-grow: 1;
+}
+
+.footer-menu,
+.address-list,
+.address-info  {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-grow: 1;
+}
+
+.social-link {
+    display: flex;
+    gap: 22px;
+}
+
 .footer {
     background: url(../images/footer-bg.png);
     background-color: var(--color-primary-dark);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 32px 0;
 }
 
 .address-link {
@@ -339,7 +432,7 @@ p {
 
 .address-link:hover {
     color: var(--color-primary-green);
-    font-weight: 600;
+    /* font-weight: 600;  */  /* remove */
 }
 
 .address-copyright {
