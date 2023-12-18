@@ -1,0 +1,27 @@
+.chef-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.chefs-title {
+    position: relative;
+    margin: 0 auto 80px;
+}
+
+.chefs-title::before,
+.chefs-title::after {
+    position: absolute;
+    bottom: 24px;
+    width: 352px;
+    border: 2px solid var(--color-secondary-light);
+    content: "";
+}
+
+.chefs-title::before {
+    left: 0;
+}
+
+.chefs-title::after {
+    right: 0;
+}

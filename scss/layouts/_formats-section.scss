@@ -1,0 +1,26 @@
+.formats-title {
+    margin-bottom: 80px;
+}
+
+.formats-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.formats-item {
+    flex-basis: calc((100% - 40px) / 3);
+    background: url(../images/walrus-format.jpg);
+    border-radius: 16px; /* remove */
+    transition: transform .3s;
+}
+
+.formats-item:hover {
+    transform: scale(1.05);
+}
+
+.formats-container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}

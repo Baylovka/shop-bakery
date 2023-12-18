@@ -1,0 +1,8 @@
+.link {
+    color: var(--color-primary-light);
+    transition: color .3s;
+}
+
+.link:hover {
+    color: var(--color-primary-green);
+}
