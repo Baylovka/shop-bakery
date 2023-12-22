@@ -1,6 +1,11 @@
 .advantages-section {
     background-color: var(--color-primary-green);
 
+    @media screen and (max-width: $bp-tablet) {
+        background-color: transparent;
+        padding-top: 40px;
+    }
+
     &__list {
         color: var(--color-primary-light);
         font-size: 20px;
@@ -9,5 +14,21 @@
         justify-content: space-between;
         gap: 40px;
         padding: 16px 10px;
+
+        @media screen and (max-width: $bp-desktop) {
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: $bp-tablet) {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 16px;
+            background-color: var( --color-secondary-light);
+            color: var(--color-primary-dark);
+            padding-top: 20px;
+            border-radius: 24px;
+            padding: 24px 40px;
+        }
     }
 }

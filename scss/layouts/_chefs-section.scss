@@ -1,7 +1,13 @@
 .chefs-section {
+    padding-left: 16px;
     &__title {
         position: relative;
         margin: 0 auto 80px;
+        
+        @media screen and (max-width: $bp-desktop) {
+            margin-bottom: 24px;
+        }
+
         &::before,
         &::after {
             position: absolute;
@@ -9,6 +15,10 @@
             width: 352px;
             border: 2px solid var(--color-secondary-light);
             content: "";
+
+            @media screen and (max-width: $bp-desktop) {
+                display: none;
+            }
         }
     
         &::before {
@@ -24,10 +34,20 @@
         display: flex;
         flex-wrap: wrap;
         gap: 40px 30px;
+
+        @media screen and (max-width: $bp-tablet) {
+            gap: 32px 30px;
+        }
     }
     
     &__item {
         flex-basis: calc((100% - 30px) / 2);
+        flex-grow: 1;
+
+        @media screen and (max-width: $bp-tablet) {
+            flex-basis: 100%;
+            justify-content: center;
+        }
     }
 }
 
