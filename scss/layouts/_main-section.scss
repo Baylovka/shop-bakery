@@ -5,6 +5,10 @@
     background-position: center top;
     background-size: cover;
 
+    @media screen and (max-width: $bp-desktop) {
+        padding: 124px 0;
+    }
+
     &__title {
         color: var(--color-primary-light);
         font-family: "Poppins", sans-serif;
@@ -12,6 +16,25 @@
         font-weight: 900;
         text-align: center;
         margin-bottom: 0;
+
+        @media screen and (max-width: $bp-desktop) {
+            line-height: 1;
+            margin-bottom: 48px;
+        }
+
+        @media screen and (max-width: $bp-tablet) {
+            font-size: 67px;
+        }
+    }
+
+    &__button {
+        display: none;
+
+        @media screen and (max-width: $bp-desktop) {
+            display: block;
+            font-size: 16px;
+            margin: 0 auto;
+        }
     }
 }
 

@@ -3,4 +3,8 @@
     max-width: 1288px;
     margin: 0 auto;
     padding: 0 24px;
+
+    @media screen and (max-width: $bp-desktop) {
+        padding: 0 20px;
+    }
 }

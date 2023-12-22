@@ -359,6 +359,11 @@ p {
   margin: 0 auto;
   padding: 0 24px;
 }
+@media screen and (max-width: 1280px) {
+  .container {
+    padding: 0 20px;
+  }
+}
 
 .footer {
   position: relative;
@@ -536,6 +541,11 @@ p {
   width: 100%;
   padding-top: 32px;
 }
+@media screen and (max-width: 1280px) {
+  .header {
+    padding-top: 20px;
+  }
+}
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -569,6 +579,34 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 1280px) {
+  .header__menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .header__button {
+    display: none;
+  }
+}
+.header__burger {
+  display: none;
+}
+@media screen and (max-width: 1280px) {
+  .header__burger {
+    display: block;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    width: 24px;
+    height: 24px;
+    fill: var(--color-primary-light);
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    cursor: pointer;
+  }
+}
 
 .main-section {
   padding: 272px 0;
@@ -577,6 +615,11 @@ p {
   background-position: center top;
   background-size: cover;
 }
+@media screen and (max-width: 1280px) {
+  .main-section {
+    padding: 124px 0;
+  }
+}
 .main-section__title {
   color: var(--color-primary-light);
   font-family: "Poppins", sans-serif;
@@ -584,6 +627,101 @@ p {
   font-weight: 900;
   text-align: center;
   margin-bottom: 0;
+}
+@media screen and (max-width: 1280px) {
+  .main-section__title {
+    line-height: 1;
+    margin-bottom: 48px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-section__title {
+    font-size: 67px;
+  }
+}
+.main-section__button {
+  display: none;
+}
+@media screen and (max-width: 1280px) {
+  .main-section__button {
+    display: block;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-primary-light);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.mobile-menu::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background-image: url("../images/bread-circle-words.png");
+  width: 186px;
+  height: 241px;
+}
+.mobile-menu.is-open {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.mobile-menu__btn-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  stroke: var(--color-primary-dark);
+  fill: none;
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.mobile-menu__logo {
+  display: block;
+  padding: 16px 24px 0 24px;
+  margin-bottom: 32px;
+}
+.mobile-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  padding: 0 24px;
+}
+.mobile-menu__link {
+  color: var(--color-primary-dark);
+  font-size: 14px;
+  font-weight: 300;
+  -webkit-transition: color 0.2s, font-weight 0.2s;
+  transition: color 0.2s, font-weight 0.2s;
+}
+.mobile-menu__link:hover {
+  font-weight: 600;
+  color: var(--color-primary-green);
 }
 
 .backdrop {
