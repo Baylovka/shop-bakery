@@ -1,34 +1,27 @@
 .traditions-section {
     padding-top: 96px;
-}
 
-.traditions-text span {
-    color: var(--color-primary-green);
-    font-weight: 600;
-}
+    &__container {
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+    }
 
-.traditions-text .uppercase {
-    text-transform: uppercase;
-}
+    &__content {
+        max-width: 710px;
+    }
 
-.traditions-text.limited {
-    max-width: 330px;
-}
+    &__title {
+        margin-bottom: 42px;
+    }
 
-.traditions-title {
-    margin-bottom: 42px;
-}
+    &__text {
+        &--limited {
+            max-width: 330px;
+        }
+    }
 
-.traditions-container {
-    display: flex;
-    gap: 40px;
-    justify-content: space-between;
-}
-
-.traditions-content {
-    max-width: 710px;
-}
-
-.traditions-img {
-    border-radius: 50% 50% 0 0;
+    &__img {
+        border-radius: 50% 50% 0 0;
+    }
 }
