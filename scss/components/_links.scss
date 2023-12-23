@@ -1,6 +1,11 @@
 .link {
     color: var(--color-primary-light);
     transition: color .3s;
+
+    @media screen and (max-width: $bp-desktop) {
+        font-size: 14px;
+        font-weight: 300;
+    }
 }
 
 .link:hover {

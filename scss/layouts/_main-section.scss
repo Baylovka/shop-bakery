@@ -9,6 +9,21 @@
         padding: 124px 0;
     }
 
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background: linear-gradient(
+            103deg, 
+            rgba(18, 18, 17, 0.78) 2.03%, 
+            rgba(18, 18, 17, 0.60) 58.46%,
+            rgba(18, 18, 17, 0.00) 90.36%), 
+            url(../images/main-bg@2x.jpg);
+
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;    
+    }
+
     &__title {
         color: var(--color-primary-light);
         font-family: "Poppins", sans-serif;
@@ -37,4 +52,3 @@
         }
     }
 }
-
