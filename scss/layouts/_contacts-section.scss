@@ -1,18 +1,60 @@
 .contact-section {
     padding-bottom: 96px;
 
+    @media screen and (max-width: $bp-tablet) {
+        padding-bottom: unset;
+    }
+
     &__title {
         margin-bottom: 16px;
+
+        @media screen and (max-width: $bp-desktop) {
+            text-align: center;
+        }
+    }
+
+    &__text {
+        color: var(--color-secondary-green);
+        margin-bottom: 42px;
+
+        @media screen and (max-width: $bp-desktop) {
+            font-size: 14px;
+            font-weight: 300;
+            margin-bottom: 24px;
+            text-align: center;
+        }
     }
     
     &__container {
         display: flex;
         gap: 32px;
+        justify-content: center;
+
+        @media screen and (max-width: $bp-tablet) {
+            flex-direction: column;
+            gap: 24px;  
+        }
     }
 
     &__map {
         flex-shrink: 0;
         border-radius: 16px;
+        width: 590px; 
+        height: 590px;
+
+        @media screen and (max-width: $bp-desktop) {
+            width: 350px;
+            height: 350px;
+        }
+
+        @media screen and (max-width: $bp-tablet) {
+            // width: 100%;
+            width: auto;
+            // flex-shrink: 0;
+            height: 176px;
+            margin: 0 -40px;
+        }
+
     }
 }
 

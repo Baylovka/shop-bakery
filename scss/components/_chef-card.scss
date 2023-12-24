@@ -3,6 +3,10 @@
     gap: 30px;
     align-items: flex-start;
 
+    @media screen and (max-width: $bp-desktop) {
+        gap: 16px;
+    }
+
     &__img {
         border-radius: 4px 4px 4px 200px;
         box-shadow:
@@ -11,6 +15,9 @@
         
         @media screen and (max-width: $bp-desktop) {
             width: 156px;
+            box-shadow:
+            -10px 10px 0 0 var(--color-primary-light),
+            -10px 10px 0 1px var(--color-secondary-dark);
         }
     }
 
