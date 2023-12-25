@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Сучасна пекарня</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -129,60 +130,65 @@
         </ul>
       </div>
     </section>
-    <!-- <section class="formats-section section" id="formats-section">
+    <section class="formats-section section" id="formats-section">
       <div class="container">
         <h2 class="formats-section__title section__title section__title--centered">Формати</h2>
         <div class="formats-section__container">
-          <button type="button" class="carousel-button">
+          <button type="button" class="carousel-button prev">
             <svg width="16px" height="16px">
               <use href="./images/icons.svg#icon-arrow"></use>
             </svg>
           </button>
-          <ul class="formats-section__list">
-            <li class="formats-section__item">
-              <article class="format-cards">
-                <h3 lang="en" class="format-cards__title">Walrus</h3>
-                <div class="format-cards__text">
-                  <p>Площа: до 120 м2</p>
-                  <p>Меню: розширене меню</p>
-                  <p>
-                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби
-                  </p>
-                  <p>Посадкові місця: є</p>
-                </div>
-              </article>
-            </li>
-            <li class="formats-section__item">
-              <article class="format-cards">
-                <h3 lang="en" class="format-cards__title">Horseshoe</h3>
-                <div class="format-cards__text">
-                  <p>Площа: до 25 м2</p>
-                  <p>Меню: найпопулярніші позиції меню</p>
-                  <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
-                  <p>Посадкові місця: відсутні</p>
-                </div>
-              </article>
-            </li>
-            <li class="formats-section__item">
-              <article class="format-cards">
-                <h3 lang="en" class="format-cards__title">Handlebar</h3>
-                <div class="format-cards__text">
-                  <p>Площа: до 15 м2</p>
-                  <p>Меню: найпопулярніші позиції меню</p>
-                  <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
-                  <p>Посадкові місця: відсутні</p>
-                </div>
-              </article>
-            </li>
-          </ul>
-          <button type="button" class="carousel-button carousel-button--rotate">
+          <div class="swiper">
+            <ul class="swiper-wrapper formats-section__list">
+              <li class="swiper-slide formats-section__item formats-section__item--1">
+                <article class="format-cards">
+                  <h3 lang="en" class="format-cards__title">Walrus</h3>
+                  <div class="format-cards__text">
+                    <p>Площа: до 120 м2</p>
+                    <p>Меню: розширене меню</p>
+                    <p>
+                      Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби
+                    </p>
+                    <p>Посадкові місця: є</p>
+                  </div>
+                </article>
+              </li>
+              <li class="swiper-slide formats-section__item formats-section__item--2">
+                <article class="format-cards">
+                  <h3 lang="en" class="format-cards__title">Horseshoe</h3>
+                  <div class="format-cards__text">
+                    <p>Площа: до 25 м2</p>
+                    <p>Меню: найпопулярніші позиції меню</p>
+                    <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
+                    <p>Посадкові місця: відсутні</p>
+                  </div>
+                </article>
+              </li>
+              <li class="swiper-slide formats-section__item formats-section__item--3">
+                <article class="format-cards">
+                  <h3 lang="en" class="format-cards__title">Handlebar</h3>
+                  <div class="format-cards__text">
+                    <p>Площа: до 15 м2</p>
+                    <p>Меню: найпопулярніші позиції меню</p>
+                    <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
+                    <p>Посадкові місця: відсутні</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <div class="pagination">
+              <span class="pagination__bullet"></span>
+            </div>
+          </div>
+          <button type="button" class="carousel-button next carousel-button--rotate">
             <svg width="16px" height="16px">
               <use href="./images/icons.svg#icon-arrow"></use>
             </svg>
           </button>
         </div>
       </div>
-    </section> -->
+    </section>
     <section class="contact-section section" id="contact-section">
       <div class="container">
         <div class="contact-section__container">
@@ -212,8 +218,7 @@
           </div>
           <iframe class="contact-section__map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640531314047!2d30.491233500000003!3d50.4566697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1701440179608!5m2!1sru!2sua"
-            style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
@@ -292,6 +297,8 @@
       </form>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/formats-slider.js"></script>
   <script src="./js/modal.js"></script>
   <script src="./js/mobile-menu.js"></script>
 </body>
